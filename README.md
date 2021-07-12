@@ -23,6 +23,8 @@ This project was made using:
   
   Windows X.
   
+The project has Maven dependencies for JUNIT, no binaries were commited.
+  
 --------------------------------------------------------------------------------
 
 2. Project Description

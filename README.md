@@ -69,7 +69,7 @@ The amount to pay ASTRID is: 85 USD
 
 3. Project Installation
 
-Clone the repository or download the code.
+Download the code as ZIP.
 
 Import the solution as "Maven Project" in Eclipse.
 
@@ -190,9 +190,6 @@ All the biz logic is in the com.jacob.bizOperations.IoetLogic Class
 All the solution was made from scratch, to avoid copy-paste.
 
 It was built in 3.5 hours, but the main biz logic takes an hour.
-
-You may see my GitHub kind of simple. Sorry for that, all my programming life is in private repos, promise to upload personal projects to public repos.
-
 
 
 Greetings,

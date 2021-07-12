@@ -96,7 +96,7 @@ You will need to INSTALL the project again in case of changes.
 
 In the to_process folder inside the project, you will see 2 files:
 
-a_jacob_sample
+a_jacob_sample.txt
 
 pay_by_day.txt
 
@@ -106,14 +106,11 @@ The pay_by_day.txt has has the "pay by hour range" information.
 
 Format and content of the pay_by_day.txt:
 
-Pay by hour range file
-hour gaps are not supported yet, fill all the day with ranges.  From 00:00 to 23:59
+In the "Pay by hour range file" hour gaps are not supported yet, fill all the day with ranges.  From 00:00 to 23:59
 	  
-Hours should not overlap, consistency will be supported soon.
+Hours should not overlap, consistency validation will be supported soon.
 
 End of the day is 23:59 for calculations consistency.
-
-You will find the following notes in the file.
 
 Format:
 
@@ -200,6 +197,8 @@ All the solution was made from scratch, to avoid copy-paste.
 It was built in 3.5 hours, but the main biz logic takes an hour.
 
 After this excercise, I am building an on-promises localhost simple CI/CD infraestructure to show you my knowledge.
+
+I recommend to execute UNITE TESTING for further tests.
 
 
 

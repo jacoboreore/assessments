@@ -1,0 +1,44 @@
+############################################################
+# Pay by hour range file
+# hour gaps are not supported yet, fill all the day 
+#	from 00:00 to 23:59
+# Hours should not overlap, consistency will be supported soon
+# End of the day is 23:59 for calculations consistency
+# Format:
+# 	day(2 digits)
+#	tab
+#	start hour
+#	tab
+#	end hour
+#	tab
+# 	value
+###########################################################
+###########################################################
+#MONDAY
+MO	00:01	09:00	25
+MO	09:01	18:00	15
+MO	18:01	23:59	20
+#TUESDAY
+TU	00:01	09:00	25
+TU	09:01	18:00	15
+TU	18:01	23:59	20
+#WEDNESDAY
+WE	00:01	09:00	25
+WE	09:01	18:00	15
+WE	18:01	23:59	20
+#THURSDAY
+TH	00:01	09:00	25
+TH	09:01	18:00	15
+TH	18:01	23:59	20
+#FRIDAY
+FR	00:01	09:00	25
+FR	09:01	18:00	15
+FR	18:01	23:59	20
+#SATURDAY
+SA	00:01	09:00	30
+SA	09:01	18:00	20
+SA	18:01	23:59	20
+#SUNDAY
+SU	00:01	09:00	25
+SU	09:01	18:00	20
+SU	18:01	23:59	25

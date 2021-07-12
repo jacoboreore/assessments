@@ -85,6 +85,12 @@ Run the Maven pom.xml file with the option INSTALL.
 
 4. Technical details and USER MANUAL
 
+This project will be a runnable jar, the execution take one single parameter from commmand line:
+
+-> the path for the a_jacob_sample,txt, pay_by_day.txt.  Described below.
+
+Typically this path will be C:/jacob as the pom.xml shows.
+
 The project was made to be fully configurable.  It means, the hours range and values could be changed.
 You will need to INSTALL the project again in case of changes.
 
@@ -192,6 +198,9 @@ All the biz logic is in the com.jacob.bizOperations.IoetLogic Class
 All the solution was made from scratch, to avoid copy-paste.
 
 It was built in 3.5 hours, but the main biz logic takes an hour.
+
+After this excercise, I am building an on-promises localhost simple CI/CD infraestructure to show you my knowledge.
+
 
 
 Greetings,

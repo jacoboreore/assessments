@@ -8,6 +8,7 @@ Content
 3. Project installation.
 4. Technical details and USER MANUAL.
 5. Other details.
+6. Architecture, methodology and final instructions
 
 --------------------------------------------------------------------------------
 
@@ -196,11 +197,43 @@ All the solution was made from scratch, to avoid copy-paste.
 
 It was built in 3.5 hours, but the main biz logic takes an hour.
 
-After this excercise, I am building an on-promises localhost simple CI/CD infraestructure to show you my knowledge.
+After this exercise, I am building an on-premise localhost simple CI/CD infrastructure to show you my knowledge if this solution fits the expectations.
 
-I recommend to execute UNITE TESTING for further tests.
+I recommend to execute JUNIT TESTING for further tests.  Do not forget to run pom.xml INSTALL to take any changes.
 
+--------------------------------------------------------------------------------
 
+6. Architecture, methodology and final instructions.
+
+The project follows the Exercise instructions as is.
+
+Architecture:
+
+![image](https://user-images.githubusercontent.com/55815817/125313500-e82e9380-e2fa-11eb-8f19-385a4cc4a8eb.png)
+
+Methodology:
+The project is a simple console application as frameworks like Spring Boot(better for this kind of projects) may incurred in runtime that is clearly not permitted.
+Every information in the app is stored in DTOs, the very first is step is parse two files: "employee work hours" file and "pay by hour range" file and then process the information with these remarks:
+
+An employee ideally works within a range.
+
+An employee could work in two or more hour ranges.
+
+A tricky part: an employee could star his/her work at the end of a range. 
+
+All supported. The calculations were made using simple comparisons.
+
+Configurations have a detailed comment about its consistency.  
+
+For a debugging/running process please: SET A DEBUG PARAMETER INDICATING THE PATH OF THE "employee work hours" file and "pay by hour range" file, ideally the installed by pom.xml 
+
+----> c:/jacob
+
+File inconsistencies will cause an immediate abort.
+
+-------------------------
+
+Have a great day.
 
 Greetings,
 

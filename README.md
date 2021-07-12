@@ -96,7 +96,7 @@ pay_by_day.txt
 The file a_jacob_sample.txt has the Employee Work information.
 The pay_by_day.txt has has the "pay by hour range" information.  
 
-Format and content:
+Format and content of the pay_by_day.txt:
 
 Pay by hour range file
 hour gaps are not supported yet, fill all the day with ranges.  From 00:00 to 23:59

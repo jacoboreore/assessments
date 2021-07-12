@@ -36,7 +36,7 @@ public class IoetLogic {
 	 * 
 	 * @author Jacob Orellana<br>
 	 * 
-	 * @date 02/06/20021
+	 * @date 12/07/2021
 	 * @version 1.0
 	 * 
 	 * 
@@ -60,7 +60,7 @@ public class IoetLogic {
 	 * 
 	 * @author Jacob Orellana<br>
 	 * 
-	 * @date 02/06/20021
+	 * @date 12/07/2021
 	 * @version 1.0
 	 * 
 	 * 
@@ -100,11 +100,11 @@ public class IoetLogic {
 	}
 
 	/**
-	 * From a specific line of data, this try to read the employee
+	 * From a specific line of data, this try to read the employee name.
 	 * 
 	 * @author Jacob Orellana<br>
 	 * 
-	 * @date 02/06/20021
+	 * @date 12/07/2021
 	 * @version 1.0
 	 * 
 	 * 
@@ -121,11 +121,11 @@ public class IoetLogic {
 	}
 
 	/**
-	 * From a specific line of data, this try to read the worked data
+	 * From a specific line of data, this try to read the "worked" data
 	 * 
 	 * @author Jacob Orellana<br>
 	 * 
-	 * @date 02/06/20021
+	 * @date 12/07/2021
 	 * @version 1.0
 	 * 
 	 * 
@@ -164,11 +164,11 @@ public class IoetLogic {
 	}
 
 	/**
-	 * After parse the input file this process the employee
+	 * After parse the input file, this process the employee
 	 * 
 	 * @author Jacob Orellana<br>
 	 * 
-	 * @date 02/06/20021
+	 * @date 12/07/2021
 	 * @version 1.0
 	 * 
 	 * 
@@ -193,7 +193,7 @@ public class IoetLogic {
 
 			// this operation will take these cases
 			// ----> the employee worked in one range
-			// ----> the employee takes many ranges in one shot, need to create subranges
+			// ----> the employee takes many ranges in one shot, needs to create subranges
 
 			for (EmployeeWorkedHours wh : thisEmployee.getWorkedHours()) {
 
@@ -230,6 +230,7 @@ public class IoetLogic {
 						if (toHour.compareTo(configuredToHour) <= 0) {
 							// great, we do not need to check another range
 							// get the total hours
+							// fixed hours means some part of the code forces to new ranges
 							if (wh.isFixed())
 								diff = toHour.getTime() - addAMinute(fromHour, -1).getTime();
 							else
@@ -237,10 +238,11 @@ public class IoetLogic {
 
 						} else {
 
-							// No?, I need add a new "subrange" to be calculated in another configured range
+							// No?, I need add a new "hour work subrange" to be calculated in another configured range
 							// of hours
 
 							// get the total hours
+							// fixed hours means some part of the code forces to new ranges
 							if (wh.isFixed())
 								diff = configuredToHour.getTime() - addAMinute(fromHour, -1).getTime();
 							else
@@ -282,7 +284,7 @@ public class IoetLogic {
 	 * 
 	 * @author Jacob Orellana<br>
 	 * 
-	 * @date 02/06/20021
+	 * @date 12/07/2021
 	 * @version 1.0
 	 * 
 	 * 

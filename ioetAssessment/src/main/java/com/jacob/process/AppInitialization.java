@@ -21,7 +21,7 @@ public class AppInitialization {
 	 * 
 	 * @author Jacob Orellana<br>
 	 * 
-	 * @date 02/06/20021
+	 * @date 12/07/2021
 	 * @version 1.0
 	 * 
 	 * @param args
@@ -41,7 +41,7 @@ public class AppInitialization {
 	 * 
 	 * @author Jacob Orellana<br>
 	 * 
-	 * @date 02/06/20021
+	 * @date 12/07/2021
 	 * @version 1.0
 	 * 
 	 * @param args

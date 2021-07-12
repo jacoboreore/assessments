@@ -93,7 +93,7 @@ public final class ApplicationSettings {
 		payByHourRangeSettings = new ArrayList<PayByHourRangeDto>();
 
 		// **********************************************************
-		// Good luck
+		// Good luck from here
 		// **********************************************************
 
 		String textFile = FileUtil.readCompleteFile(payByDayFilePath);
